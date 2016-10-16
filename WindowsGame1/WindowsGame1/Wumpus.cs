@@ -2,16 +2,19 @@
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 namespace HuntTheWumpus
 {
     
 
-    class Wumpus : Hazzard
+    public class Wumpus : Hazzard
     {
         private static Wumpus instance;
         private int room;
         private bool is_awake { get { return is_awake; } set { is_awake = value; } }
+        Texture2D wumpusIcon;
+        ContentManager content;
 
         public static Wumpus Instance
         {
@@ -19,10 +22,15 @@ namespace HuntTheWumpus
             {
                 if (instance == null)
                 {
-                    instance = new Wumpus();
+                    //instance = new Wumpus();
                 }
                 return instance;
             }
+        }
+
+        public Wumpus(ContentManager gameContent)
+        {
+            this.content = gameContent;
         }
 
         public void TryMove()
@@ -52,6 +60,7 @@ namespace HuntTheWumpus
 
         public override void LoadStuff()
         {
+            wumpusIcon = content.Load<Texture2D>("GameEntities/Wumpus");
             base.LoadStuff();
         }
 
@@ -63,10 +72,12 @@ namespace HuntTheWumpus
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
+            spriteBatch.Draw(wumpusIcon, new Rectangle(0,0,256,256), Color.White);
             base.Draw(spriteBatch);
         }
     }

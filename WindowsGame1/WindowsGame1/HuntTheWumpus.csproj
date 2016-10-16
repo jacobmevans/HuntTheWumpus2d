@@ -38,7 +38,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\x86\Debug</OutputPath>
+    <OutputPath>.\</OutputPath>
     <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -59,6 +59,9 @@
     <PlatformTarget>x86</PlatformTarget>
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HuntTheWumpus.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
@@ -72,15 +75,28 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="Background.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Hazzard.cs" />
+    <Compile Include="KeyboardManager.cs" />
+    <Compile Include="MainLevel.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MenuItemComponents.cs" />
     <Compile Include="Pit.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Room.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="ScreenEventArgs.cs" />
+    <Compile Include="ScreenManager.cs" />
+    <Compile Include="StartScreen.cs" />
     <Compile Include="SuperBats.cs" />
+    <Compile Include="Tile.cs" />
     <Compile Include="Wumpus.cs" />
+    <Compile Include="XMLSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

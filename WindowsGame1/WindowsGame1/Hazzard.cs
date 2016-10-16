@@ -8,9 +8,14 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace HuntTheWumpus
 {
-    class Hazzard
+    public class Hazzard
     {
-        
+        private Game game;
+
+        public Hazzard()
+        {
+            
+        }
 
         public virtual void LoadStuff()
         {

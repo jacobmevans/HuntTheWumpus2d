@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HuntTheWumpus
 {
-    class Room
+    public class Room
     {
         private int conn_1;
         private int conn_2;
