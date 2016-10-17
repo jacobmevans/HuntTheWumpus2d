@@ -24,6 +24,11 @@ namespace HuntTheWumpus
             set { active = value; }
         }
 
+        public Rectangle SourceRect
+        {
+            get { return sourceRect; }
+        }
+
         public Vector2 CurrentFrame
         {
             get { return currentFrame; }
@@ -81,7 +86,7 @@ namespace HuntTheWumpus
                 }
             }
 
-            sourceRect = new Rectangle((int)currentFrame.X, (int)currentFrame.Y * FrameHeight, FrameWidth, FrameHeight);
+            sourceRect = new Rectangle((int)currentFrame.X, (int)currentFrame.Y * FrameHeight, 56, 64);
         }
 
         public void Draw(SpriteBatch spriteBatch)

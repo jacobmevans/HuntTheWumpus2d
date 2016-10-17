@@ -67,22 +67,17 @@ namespace HuntTheWumpus
 
         public void ChangeScreens(Screen newScreen)
         {
-            System.Diagnostics.Debug.Write("\nscreens.Count = " + screens.Count + "\n");
             while (screens.Count > 0)
             {
                 RemoveScreen();
             }
-            System.Diagnostics.Debug.Write("\ntest2\n");
             newScreen.DrawOrder = startDrawOrder;
             drawOrder = startDrawOrder;
-            System.Diagnostics.Debug.Write("\ntest3\n");
             AddScreen(newScreen);
-            System.Diagnostics.Debug.Write("\ntest4\n");
             if (OnScreenChange != null)
             {
                 OnScreenChange(this, new ScreenEventArgs(newScreen));
             }
-            System.Diagnostics.Debug.Write("\nSucessfully changed screens\n");
         }
 
     }

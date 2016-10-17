@@ -30,7 +30,11 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="IntroScreen\" />
+    <Compile Include="Textures\Tile0.png">
+      <Name>Tile0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ScreenManager\BlackFadeTransition.png">
@@ -54,251 +58,182 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Background\test.jpg">
-      <Name>test</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Textures\bricks.bmp">
-      <Name>bricks</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\bricks_nm.bmp">
-      <Name>bricks_nm</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\ciottoli_bw.bmp">
-      <Name>ciottoli_bw</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\ciottoli_cm.bmp">
-      <Name>ciottoli_cm</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\ciottoli_normal.bmp">
-      <Name>ciottoli_normal</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\mud_wa_nm.bmp">
-      <Name>mud_wa_nm</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\Tile2.jpg">
-      <Name>Tile2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\Tile1.jpg">
-      <Name>Tile1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\wood_axis.jpg">
-      <Name>wood_axis</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\wood_axis_light.jpg">
-      <Name>wood_axis_light</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\Tile3.jpg">
-      <Name>Tile3</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Textures\wood_base.jpg">
-      <Name>wood_base</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="GameEntities\Player\Down0.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down0.png">
       <Name>Down0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down1.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down1.png">
       <Name>Down1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down2.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down2.png">
       <Name>Down2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down3.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down3.png">
       <Name>Down3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down4.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down4.png">
       <Name>Down4</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down5.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down5.png">
       <Name>Down5</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down6.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down6.png">
       <Name>Down6</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down7.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down7.png">
       <Name>Down7</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Down8.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Down8.png">
       <Name>Down8</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward0.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward0.png">
       <Name>Forward0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward1.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward1.png">
       <Name>Forward1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward2.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward2.png">
       <Name>Forward2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward4.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward4.png">
       <Name>Forward4</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward5.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward5.png">
       <Name>Forward5</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward6.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward6.png">
       <Name>Forward6</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Forward7.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Forward7.png">
       <Name>Forward7</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Foward3.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Foward3.png">
       <Name>Foward3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Foward8.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Foward8.png">
       <Name>Foward8</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left0.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left0.png">
       <Name>Left0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left1.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left1.png">
       <Name>Left1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left2.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left2.png">
       <Name>Left2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left3.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left3.png">
       <Name>Left3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left4.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left4.png">
       <Name>Left4</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left5.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left5.png">
       <Name>Left5</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left6.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left6.png">
       <Name>Left6</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left7.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left7.png">
       <Name>Left7</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Left8.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Left8.png">
       <Name>Left8</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right0.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right0.png">
       <Name>Right0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right1.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right1.png">
       <Name>Right1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right2.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right2.png">
       <Name>Right2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right3.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right3.png">
       <Name>Right3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right4.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right4.png">
       <Name>Right4</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right5.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right5.png">
       <Name>Right5</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right6.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right6.png">
       <Name>Right6</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right7.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right7.png">
       <Name>Right7</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="GameEntities\Player\Right8.png">
+    <Compile Include="GameEntities\SinglePlayerPng\Right8.png">
       <Name>Right8</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -307,6 +242,104 @@
   <ItemGroup>
     <Compile Include="GameEntities\Player.png">
       <Name>Player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Tile2.png">
+      <Name>Tile2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Tile3.png">
+      <Name>Tile3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Tile4.png">
+      <Name>Tile4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background\test.png">
+      <Name>test</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Tile6.png">
+      <Name>Tile6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Tile10.png">
+      <Name>Tile10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Tile11.png">
+      <Name>Tile11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Tile12.png">
+      <Name>Tile12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Tile7.png">
+      <Name>Tile7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Tile8.png">
+      <Name>Tile8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Tile9.png">
+      <Name>Tile9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Tile5.png">
+      <Name>Tile5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameEntities\Pit.jpg">
+      <Name>Pit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameEntities\SuperBats.png">
+      <Name>SuperBats</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background\PitFall.jpg">
+      <Name>PitFall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background\WumpusKill.jpg">
+      <Name>WumpusKill</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

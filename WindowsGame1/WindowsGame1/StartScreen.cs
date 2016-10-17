@@ -43,9 +43,8 @@ namespace HuntTheWumpus
                 switch(menuComponents.SelectedIndex)
                 {
                     case 0:
-                        System.Diagnostics.Debug.Write("\nEntered gamestate main level...\n");
+                        gameRef.resetMaps();
                         screenManager.ChangeScreens(gameRef.mainLevel);
-                        System.Diagnostics.Debug.Write("\nSucessfully loaded main level...\n");
                         break;
                     case 1:
                         Game.Exit();

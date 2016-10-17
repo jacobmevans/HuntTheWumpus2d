@@ -21,6 +21,8 @@ namespace HuntTheWumpus
 
         public StartScreen startScreen;
         public MainLevel mainLevel;
+        public PitFall pitFall;
+        public KillScreen killScreen;
         ScreenManager screenManager;
 
         public Game1()
@@ -28,8 +30,9 @@ namespace HuntTheWumpus
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            this.graphics.PreferredBackBufferWidth = 800;
-            this.graphics.PreferredBackBufferHeight = 600;
+            //set fullscreen to false and change width/height to be a multiple of 64.
+            this.graphics.PreferredBackBufferWidth = 832;
+            this.graphics.PreferredBackBufferHeight = 640;
             this.graphics.IsFullScreen = false;
             
             screenManager = new ScreenManager(this);
@@ -37,6 +40,8 @@ namespace HuntTheWumpus
 
             startScreen = new StartScreen(this, screenManager);
             mainLevel = new MainLevel(this, screenManager);
+            pitFall = new PitFall(this, screenManager);
+            killScreen = new KillScreen(this, screenManager);
             screenManager.ChangeScreens(startScreen);
 
         }
@@ -53,6 +58,16 @@ namespace HuntTheWumpus
             Window.Title = "Hunt The Wumpus";
             Tile.Content = Content;
             base.Initialize();
+        }
+
+        public void resetMaps()
+        {
+            mainLevel = new MainLevel(this, screenManager);
+            pitFall = new PitFall(this, screenManager);
+            killScreen = new KillScreen(this, screenManager);
+            Pit.Instance.respawnPits();
+            SuperBats.Instance.respawnBats();
+            Wumpus.Instance.respawnWumpus();
         }
 
         /// <summary>
@@ -84,9 +99,9 @@ namespace HuntTheWumpus
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            this.TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 30f);
+            //this.TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 30f);
             // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Back))
                 this.Exit();
 
             KeyboardManager.Instance.Update();

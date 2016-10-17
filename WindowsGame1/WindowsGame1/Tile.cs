@@ -13,6 +13,12 @@ namespace HuntTheWumpus
         protected Texture2D texture;
         private Rectangle rectangle;
         private static ContentManager content;
+        protected bool hasCollision = true;
+
+        public bool Collision
+        {
+            get { return hasCollision; }
+        }
 
         public static ContentManager Content
         {
@@ -36,6 +42,10 @@ namespace HuntTheWumpus
     {
         public CollisionTile(int number, Rectangle newRectangle)
         {
+            if(number == 0 || number == 3 || number == 4 || number == 5)
+            {
+                this.hasCollision = false;
+            }
             texture = Content.Load<Texture2D>("Textures/Tile" + number);
             this.Rectangle = newRectangle;
         }
