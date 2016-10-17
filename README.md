@@ -20,7 +20,7 @@ Controls
 
 Gameplay
 -----
-Gameplay is fairly simple. You have the ability to move around the screen. The outer walls of the map have collision detection as to stop movement outside the map. 
+Gameplay is fairly simple. You have the ability to move around the screen. The outer walls of the map have collision detection as to stop movement outside the map. The current implementation has an animated sprite as the main character you control and has collision detection with the walls surroudning the room. The game also has a tile engine that can be used to create unique maps in the future.
 ###Goal
 - The goal of the game is to defeat the wumpus and escape with your life. To do this you must venture through the cave and avoid other hazzards, namely Superbats and Bottomless pits.
 ###Hazzards
@@ -36,4 +36,5 @@ Not Implemented Yet | Future Plans
 -----
 - Currently shooting is not implemented, I could not figure out the best way of taking user input and ran out of time in the current timeframe.
  - Shooting framework is in the code, but it is not implemented.
+- Sound is to be implemented in the future to include: Bat noises, falling noise, Wumpus noise, and a 8-bit game soundtrack.
 
