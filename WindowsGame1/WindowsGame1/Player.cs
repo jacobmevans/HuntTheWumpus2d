@@ -99,22 +99,22 @@ namespace HuntTheWumpus
         {
             moveSpeed = (speed * (float)gameTime.ElapsedGameTime.TotalSeconds);
 
-            if (keyState.IsKeyDown(Keys.Down))
+            if (keyState.IsKeyDown(Keys.Down) || keyState.IsKeyDown(Keys.S))
             {
                 position.Y += moveSpeed;
                 currentFrame.Y = 10;
             }
-            else if (keyState.IsKeyDown(Keys.Up))
+            else if (keyState.IsKeyDown(Keys.Up) || keyState.IsKeyDown(Keys.W))
             {
                 position.Y -= moveSpeed;
                 currentFrame.Y = 8;
             }
-            else if (keyState.IsKeyDown(Keys.Right))
+            else if (keyState.IsKeyDown(Keys.Right) || keyState.IsKeyDown(Keys.D))
             {
                 position.X += moveSpeed;
                 currentFrame.Y = 11;
             }
-            else if (keyState.IsKeyDown(Keys.Left))
+            else if (keyState.IsKeyDown(Keys.Left) || keyState.IsKeyDown(Keys.A))
             {
                 position.X -= moveSpeed;
                 currentFrame.Y = 9;
