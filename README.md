@@ -35,4 +35,5 @@ Gameplay is fairly simple. You have the ability to move around the screen. The o
 Not Implemented Yet | Future Plans
 -----
 - Currently shooting is not implemented, I could not figure out the best way of taking user input and ran out of time in the current timeframe.
+ - Shooting framework is in the code, but it is not implemented.
 
